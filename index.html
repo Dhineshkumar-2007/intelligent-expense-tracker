@@ -1,105 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intelliignt expense tracker</title>
-  <link rel="icon" type="image/x-icon" href="image/budget-gradient-linear-icon-estimated-revenue-tracking-income-and-expenses-organizing-finances-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg">
-  <style>
-    /* Apply styles for screens up to 480px wide */
-@media screen and (max-device-width: 480px) {
-    /* Your CSS rules here */
-    .login,.iconn{
-    margin-left: 200px;
-    }
-}
+  <link rel="icon" type="image/x-icon"
+    href="image\budget-gradient-linear-icon-estimated-revenue-tracking-income-and-expenses-organizing-finances-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg">
+  <link rel="stylesheet" href="style.css">
 
-    .login{
-      border-radius:25px;
-      border-width: 0px;
-      background-color: aqua;
-      border: 0px;
-      height: 50px;
-      width: 200px;
-      margin-top: 0px;
-      margin-left: 450px;
-    
-      cursor: pointer;
-      font-family: cursive ;
-      font-size: large;
-      
-    }
-    .signup{
-      border-radius:25px;
-      border-width: 0px;
-      background-color: aqua;
-      border: 0px;
-      height: 50px;
-      width: 200px;
-      margin-left: 20px;
-      margin-top: 30px;
-    
-    
-      cursor: pointer;
-      font-family: cursive ;
-      font-size: large;
-    }
-    .break{
-      display: inline-block;
-      margin: 10px;
-    }
-    .login:hover{
-      background-color: black;
-      color: aqua;
-      scrollbar-gutter:2px ;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0,0,0,0.19);
-      transform:scale(1.155) ;
-      transition: 0.2s;
-    }
-    .signup:hover{
-      background-color: black;
-      color: aqua;
-      transform:scale(1.155) ;
-      transition: 0.2s;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-  .container{
-  width: 100%;
-  min-height: 100vh;
-    background:linear-gradient(335deg,#33ccff,#ff99cc );
-  }
-  .icon{
-    align-items: center;
-    height: 80px;
-    width: 80px;
-    display:inline-block;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-left: 600px;
-  }
 
-  </style>
 </head>
-<body> 
-  <div class="container">
-   <h1 style="text-align-last: center;padding-top: 50px;font-family: cursive; ">
-    WELCOME TO INTELLIGENT EXPENSE TRACKER
-  </h1>
-  <img class="icon" src="image\budget-gradient-linear-icon-estimated-revenue-tracking-income-and-expenses-organizing-finances-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg">
-  <div>
-    <button class="login">
-      Login
-    </button>
-    <h1 class="break" style="margin: 10px 10px 10px 20px;">|</h1>
-    <button class="signup" >
-      Sign up
-    </button>
-  </div>
 
-  
-  
+<body>
+  <div class="container">
+    <h1 class="title" style="font-family: cursive; ">
+      EXPENSE TRACKER
+    </h1>
+    <div class="button">
+      <button class="login" onclick="addIncome()">
+        Add income
+      </button>
+      <h1 class="sep">
+          
+      </h1>
+      <button class="signup">
+        Expenses
+      </button>
+
+    </div>
+
+
+
   </div>
-  </body>
+  <script>
+
+
+
+    function addIncome() {
+      var income = prompt("Enter the income amount:");
+      console.log("Income added:", income);
+      localStorage.setItem('income', income);
+    }
+  </script>
+</body>
+
 </html>
