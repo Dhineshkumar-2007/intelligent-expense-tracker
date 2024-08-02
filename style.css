@@ -1,6 +1,23 @@
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
+@media screen and (min-width: 360px) and ( max-width:480px) {
+
+
+.sep{
+  margin: 3px;
+}
+.footer{
+  left: 10%;
+  position: absolute;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+}
+  
+
 .addincome {
   border-radius: 25px;
   border-width: 0px;
@@ -12,7 +29,7 @@ body{
   cursor: pointer;
   font-family: cursive;
   font-size: large;
-
+ margin: 4px;
 
 }
 
@@ -64,7 +81,7 @@ button {
 }
 .sep{
  display: inline-block;
-  margin: 20px;
+  margin: 5px;
 }
  .navbar {
   display: flex;
