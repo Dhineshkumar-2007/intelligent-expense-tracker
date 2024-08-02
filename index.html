@@ -4,45 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intelliignt expense tracker</title>
+  <title>Expense Tracker</title>
   <link rel="icon" type="image/x-icon"
     href="image\budget-gradient-linear-icon-estimated-revenue-tracking-income-and-expenses-organizing-finances-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg">
   <link rel="stylesheet" href="style.css">
 
-
+<i class="fa-brands fa-instagram"></i>
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="title" style="font-family: cursive; ">
-      EXPENSE TRACKER
-    </h1>
-    <div class="button">
-      <button class="login" onclick="addIncome()">
-        Add income
-      </button>
-      <h1 class="sep">
-          
+
+<div class="container">  
+     <h1>
+      Expense Tracker
+     </h1> 
+     <div class="balance">
+      <h1>
+        Your Balance
       </h1>
-      <button class="signup">
-        Expenses
+      <h2 id="balance">
+       $ 0.00
+      </h2>
+     </div>
+     <div class="button">
+      <button class="addincome" onclick="addIncome()">
+        Add income
+       </button>
+       <h1 class="sep">
+  
+       </h1>
+       <button class="expenses" onclick="showExpenseDialog()">
+         Add Expenses
+       </button>
+       <footer class="footer">
+        <p>copyright@Dhinesh Kumar 2024</p>
+        <input type="image" onclick="openInstagram()" class="insta" src="image\bi--instagram.png ">
+      </footer>
+     </div>
+    <dialog id="Expense-dialog" class="Expense-dialog" >
+      <h2>
+        Description
+      </h2>
+      <form >
+        <input id="desc" type="text">
+      </form>
+      <h2>
+        Amount
+      </h2>
+      <form >
+        <input id="amt" type="number">
+      </form>
+      <button onclick="closeExpenseDialog()" class="done-button">
+        Done
       </button>
-
-    </div>
-
-
-
-  </div>
+      <button onclick="closeExpenseDialog()" class="close-btn">
+        X
+      </button>
+      
+    </dialog>
+</div>
   <script>
 
+//adding income function
+function addIncome() {
+  var income = prompt("Enter the income amount:");
+  console.log("Income added:", income);
+  localStorage.setItem('income', income);
+}
+const dialog = document.getElementById("Expense-dialog")
 
+ function showExpenseDialog(){
+  dialog.showModal()
+ }
+ function closeExpenseDialog(){
+  dialog.close()
+ }
+ function openInstagram(){
+ var instagramUrl = 'https://www.instagram.com/mr__dhinshkumar__tn47?igsh=djg3bmNhMnZpbmiq';
+  window.open(instagramUrl, '_blank');
+ }
 
-    function addIncome() {
-      var income = prompt("Enter the income amount:");
-      console.log("Income added:", income);
-      localStorage.setItem('income', income);
-    }
-  </script>
+ const balance=document.querrySelector("#balance");
+ const description=document.querrySelector("#desc");
+ const amount=document.querrySelector("#amt");
+ 
+
+</script>
 </body>
 
 </html>

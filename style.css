@@ -1,4 +1,7 @@
-.login {
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.addincome {
   border-radius: 25px;
   border-width: 0px;
   background-color: aqua;
@@ -13,7 +16,7 @@
 
 }
 
-.signup {
+.expenses {
   border-radius: 25px;
   border-width: 0px;
   background-color: aqua;
@@ -21,7 +24,7 @@
   height: 50px;
   width: 200px;
   padding: 15px;
-  padding-left: 50px;
+  padding-left: 30px;
   cursor: pointer;
   font-family: cursive;
   font-size: large;
@@ -31,7 +34,6 @@
   width: 1100px;;
   padding: 30px;
   text-align: center;
-  word-spacing: 20px;
 font-size: xx-large;
   height: 50px;
 }
@@ -39,7 +41,7 @@ font-size: xx-large;
 
 
 
-.login:hover {
+.addincome:hover {
   background-color: black;
   color: aqua;
   scrollbar-gutter: 2px;
@@ -48,7 +50,7 @@ font-size: xx-large;
   transition: 0.2s;
 }
 
-.signup:hover {
+.expenses:hover {
   background-color: black;
   color: aqua;
   transform: scale(1.155);
@@ -56,24 +58,173 @@ font-size: xx-large;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-.button {
-  margin: 10px;
-  align-items: center;
+button {
   width: 600px;
-  height: 100px;
-padding-left: 400px;
-  
+  height: 100p;
 }
 .sep{
  display: inline-block;
   margin: 20px;
 }
+ .navbar {
+  display: flex;
+  background-color: beige;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 0px;;
+  margin:0px;
+}
+.u1 {
+  background-color: aqua;
+  border-radius: 5px;;
+  cursor: pointer;
+}
 
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(335deg, #33ccff, #d11ee9);
+  background: linear-gradient(335deg, #d3d627, #ff00f2);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  
+}
+.containerr-1{
+  display: flex;
+}
+.navbar{
+  border-radius: 5px;
+  background:linear-gradient(33deg, #5ddbb5, #ff00f2);
+  display: flex;
+  justify-content: center;
+  
+    
+  
+}
+.navbar button{
+  height: 50px;
+  width:100px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e7e436;
+  cursor: pointer;
 
 }
+.input-button{
+  height: 50px;
+  width: 200px;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.balance h2{
+  color: green;
+  padding-left: 50px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  padding-top: 12px;
+  padding-right: 15px;
+  justify-content: center;
+margin-left: 7px;
+  align-items: center;
+
+}
+.Expense-dialog {
+border-radius: 30px;
+width: 500px;
+height: 300px;
+position: relative;
+padding: 20px;
+backdrop-filter: blur(10px);
+background-color: rgba(255,255,255 , 0.027);
+background-color: transparent;
+border-width: 1.5px;
+}
+.Expense-dialog input{
+border-radius: 15px;
+width: 150px;
+height: 30px;
+
+border-width: 1px;
+backdrop-filter: blur(10px);
+background-color: rgba(255,255,255 , 0.027);
+background-color: transparent;
+border-color: black;
+
+}
+.Expense-dialog input:hover{
+  transform: scale(1.21);
+  transition:0.25s;
+  background-color: transparent;
+  border-color: black;
+  
+}
+.done-button{
+height: 40px;
+width: 120px;
+border-radius: 20px;
+background-color: yellow;
+border: none;
+position: absolute;
+left: 50%;
+bottom: 50%;
+cursor: pointer;
+
+}
+.done-button:hover{
+  background-color: black;
+  color: yellow;
+  box-shadow: 0 0 5px yellow,
+0 0 25px yellow,0 0 50px yellow,
+0 0 100px yellow,0 0 200px yellow;
+border-width: 0.2px;
+letter-spacing: 2px;
+transition: 0.25s;
+
+}
+.close-btn{
+  width: 40px;
+  height: 40px;
+  padding: 1px;
+  background-color: transparent;
+  color: red;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 85%;
+  left: 90%;
+  border: none;
+  font-size: larger;
+   scale: 1.5;
+   cursor: pointer;
+}
+
+.footer{
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+  font-size: larger;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+.insta{
+  background-color: aqua;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  position: absolute;
+  left: 105%;
+  bottom: 25%;
+}
+
+
+
+
