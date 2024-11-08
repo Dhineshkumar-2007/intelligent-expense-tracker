@@ -3,15 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>expense t</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: transparent;
+
+    }
+    .text{
+      letter-spacing: 3px;
+      color: rgb(190, 201, 47);
+    }
+    .container{
+      width: 100%;
+      min-height: 100vh;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .loading{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .loading .line-box{
+      padding: 2px;
+      width: 400px;
+      height: 20px;
+      border: 2px solid #267191;
+      border-radius: 20px;
+    }
+    
+
+    .loading .line-box .line{
+      height: 20px;
+      border-radius: 20px;
+      background-color: rgb(211, 24, 170);
+      animation: loading 2s forwards cubic-bezier(0,0,0,0)
+      
+
+    }
+    @keyframes loading{
+      0%{
+        width:0%
+      }
+      100%{
+        width:100%
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="container-1">
-  <form> 
-    <input type="button" value="name"class="input-button" onclick="display.value" >
-  </form>
-  </div>
+  <div class="container">
+    <div class="text">
+       <h1>Loading...</h1>
+    </div>
+    <div class="loading">
+       <div class="line-box">
+        <div class="line">
 
+        </div>
+       </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
+
+
+<!--
+.Artboard_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 14;
+}
+.Frame_1 {
+  position: absolute;
+  left: 51px;
+  top: 145px;
+  width: 1249px;
+  height: 287px;
+  z-index: 13;
+}
+.lorem_ipsum_ {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 520.844px;
+  top: 258.828px;
+  z-index: 11;
+}
+.My_photo {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 128.844px;
+  top: 259.828px;
+  z-index: 10;
+}
+.Rectangle_1 {
+  border-width: 10px;
+  border-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 488px;
+  top: 198px;
+  width: 763px;
+  height: 157px;
+  z-index: 9;
+}
+.Ellipse_2 {
+  border-width: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+  top: 151px;
+  width: 244px;
+  height: 231px;
+  z-index: 8;
+}
+.Contact {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -webkit-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -ms-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  position: absolute;
+  left: 1151.484px;
+  top: 66.5px;
+  z-index: 6;
+}
+.projects {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -webkit-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -ms-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  position: absolute;
+  left: 948.231px;
+  top: 70.387px;
+  z-index: 5;
+}
+.Skills {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -webkit-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -ms-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  position: absolute;
+  left: 766.436px;
+  top: 70px;
+  z-index: 4;
+}
+.About_me {
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -webkit-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  -ms-transform: matrix( 1.20483708922832,0,0,1.20483708922832,0,0);
+  position: absolute;
+  left: 520.722px;
+  top: 66px;
+  z-index: 3;
+}
+.PORTFOLIO {
+  font-size: 12px;
+  font-family: "Myriad Pro";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  -moz-transform: matrix( 4.65440894094321,0,0,4.65440894094321,0,0);
+  -webkit-transform: matrix( 4.65440894094321,0,0,4.65440894094321,0,0);
+  -ms-transform: matrix( 4.65440894094321,0,0,4.65440894094321,0,0);
+  position: absolute;
+  left: 209.088px;
+  top: 70.8px;
+  z-index: 2;
+}
+
+-->
