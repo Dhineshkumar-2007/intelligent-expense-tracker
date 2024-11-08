@@ -140,7 +140,7 @@ button {
   border-radius: 15px;
   cursor: pointer;
 }
-.balance h2{
+.balance ,#balance{
   color: green;
   padding-left: 50px;
   background-color: rgb(0, 0, 0);
