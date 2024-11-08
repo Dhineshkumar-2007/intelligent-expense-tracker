@@ -174,7 +174,7 @@ font-size: xx-large;
   cursor: pointer;
 }
 /* text of balance div */
-.balance{
+.balance h2,#balance{
   color: green;
   
   background-color: rgb(0, 0, 0);
