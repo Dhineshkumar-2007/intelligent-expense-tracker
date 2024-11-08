@@ -11,23 +11,25 @@
 
 <i class="fa-brands fa-instagram"></i>
 </head>
-
 <body>
-
-<div class="container">  
+  
+  <div class="container">  
+  
      <h1>
       Expense Tracker
-     </h1> 
+     </h1>
      <div class="balance">
       <h1>
         Your Balance
       </h1>
-      <span id="'balance"></span>
+      <span id="balance"> </span>
+      
      </div>
-     <div class="button">
-      <button class="addincome" onclick="addIncome()">
+     <!-- <div class="button"> --> 
+      <button class="addincome"  id= "income" onclick="addIncome()">
         Add income
        </button>
+       <button class="transactions" onclick="openTransaactionspage()">!</button>
        <h1 class="sep">
   
        </h1>
@@ -35,16 +37,18 @@
          Add Expenses
        </button>
        <footer class="footer">
-        <p>copyright@Dhinesh Kumar 2024</p>
+        <p>Folow me on @</p>
         <input type="image" onclick="openInstagram()" class="insta" src="image\bi--instagram.png ">
-      </footer>
-     </div>
+        <input type="image" onclick="openLinkedin()" class="linkedin" src="image\0c78d03cbfa19d5f3d7ad1b6e49f957b.png ">
+       </footer>
+    
     <dialog id="Expense-dialog" class="Expense-dialog" >
       <h2>
         Description
       </h2>
+      <!-- </h2> -->
       <form >
-        <input id="desc" type="text">
+        <input id="desc" type="text" placeholder=" ">
       </form>
       <h2>
         Amount
@@ -52,42 +56,16 @@
       <form >
         <input id="amt" type="number">
       </form>
-      <button onclick="closeExpenseDialog()" class="done-button">
+      <button  onclick="addExpense()" class="done-button">
         Done
       </button>
       <button onclick="closeExpenseDialog()" class="close-btn">
         X
       </button>
-      
     </dialog>
-</div>
-  <script>
-
-//adding income function
-function addIncome() {
-  var income = prompt("Enter the income amount:");
-  console.log("Income added:", income);
-  localStorage.setItem('income', income);
-}
-const dialog = document.getElementById("Expense-dialog")
-
- function showExpenseDialog(){
-  dialog.showModal()
- }
- function closeExpenseDialog(){
-  dialog.close()
- }
- function openInstagram(){
- var instagramUrl = 'https://www.instagram.com/mr__dhinshkumar__tn47?igsh=djg3bmNhMnZpbmiq';
-  window.open(instagramUrl, '_blank');
- }
-
- const balance=document.querrySelector("#balance");
- const description=document.querrySelector("#desc");
- const amount=document.querrySelector("#amt");
- 
-
-</script>
+ </div>
+ <!--javascript connect-->
+<script src="js/script.js"></script>
 </body>
 
-</html>
+</html>                                                                 
